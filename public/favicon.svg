@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <defs>
+    <linearGradient id="primaryGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f2b48" />
+      <stop offset="100%" stop-color="#1e56a0" />
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f59e0b" />
+      <stop offset="100%" stop-color="#d97706" />
+    </linearGradient>
+    <linearGradient id="rollerGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#2563eb" />
+      <stop offset="100%" stop-color="#60a5fa" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background rounded shield -->
+  <rect width="64" height="64" rx="14" fill="url(#primaryGrad)" />
+
+  <!-- Modern House Gable Silhouette -->
+  <path d="M14 36L32 18L50 36V50H14V36Z" stroke="#ffffff" stroke-width="2.5" stroke-linejoin="round" fill="none" opacity="0.4" />
+
+  <!-- Dynamic Paint Roller Brush Stroke -->
+  <path d="M12 40C18 28 30 22 46 25C49 25.5 52 27 52 27" stroke="url(#rollerGrad)" stroke-width="5" stroke-linecap="round" />
+
+  <!-- Golden Droplet -->
+  <path d="M32 28C32 28 38 37 38 41C38 44.3 35.3 47 32 47C28.7 47 26 44.3 26 41C26 37 32 28 32 28Z" fill="url(#goldGrad)" />
+  
+  <!-- Highlight shine on droplet -->
+  <circle cx="34" cy="40" r="1.5" fill="#ffffff" opacity="0.7" />
+</svg>

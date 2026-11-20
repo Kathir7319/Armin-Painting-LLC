@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 100" fill="none">
+  <defs>
+    <linearGradient id="logoPrimaryGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b1e36" />
+      <stop offset="100%" stop-color="#1e4e8c" />
+    </linearGradient>
+    <linearGradient id="logoGoldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f59e0b" />
+      <stop offset="100%" stop-color="#d97706" />
+    </linearGradient>
+    <linearGradient id="logoBlueSweep" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#2563eb" />
+      <stop offset="100%" stop-color="#38bdf8" />
+    </linearGradient>
+  </defs>
+
+  <!-- Emblem Icon on Left -->
+  <g transform="translate(10, 10)">
+    <!-- Base Icon Container -->
+    <rect width="80" height="80" rx="18" fill="url(#logoPrimaryGrad)" />
+    
+    <!-- Architect Home Roofline -->
+    <path d="M18 46L40 24L62 46V64H18V46Z" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="none" opacity="0.45" />
+
+    <!-- Paint Stroke Arc -->
+    <path d="M15 50C22 34 38 28 58 32C62 33 65 35 65 35" stroke="url(#logoBlueSweep)" stroke-width="6" stroke-linecap="round" />
+
+    <!-- Golden Paint Droplet Accent -->
+    <path d="M40 36C40 36 47 47 47 52C47 56 43.8 59 40 59C36.2 59 33 56 33 52C33 47 40 36 40 36Z" fill="url(#logoGoldGrad)" />
+    <circle cx="42" cy="50" r="1.8" fill="#ffffff" opacity="0.8" />
+  </g>
+
+  <!-- Typography -->
+  <text x="110" y="52" font-family="'Plus Jakarta Sans', system-ui, -apple-system, sans-serif" font-weight="900" font-size="36" letter-spacing="0.04em" fill="#0f2b48">
+    ARMIN
+  </text>
+  <text x="245" y="52" font-family="'Plus Jakarta Sans', system-ui, -apple-system, sans-serif" font-weight="800" font-size="36" letter-spacing="0.06em" fill="#2563eb">
+    PAINTING
+  </text>
+  <text x="415" y="44" font-family="'Plus Jakarta Sans', system-ui, -apple-system, sans-serif" font-weight="700" font-size="14" letter-spacing="0.1em" fill="#f59e0b">
+    LLC
+  </text>
+
+  <!-- Tagline & Service Badge -->
+  <text x="112" y="75" font-family="'Plus Jakarta Sans', system-ui, -apple-system, sans-serif" font-weight="600" font-size="12" letter-spacing="0.22em" fill="#64748b">
+    PREMIUM RESIDENTIAL &amp; COMMERCIAL • FUQUAY-VARINA, NC
+  </text>
+</svg>
