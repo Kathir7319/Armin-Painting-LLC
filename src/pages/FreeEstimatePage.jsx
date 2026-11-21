@@ -170,7 +170,7 @@ export default function FreeEstimatePage() {
       {/* 2. MULTI-STEP LEAD INTAKE ARCHITECTURE                        */}
       {/* ------------------------------------------------------------- */}
       <section className="py-12 sm:py-16">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           {isSubmitted ? (
             /* SUCCESS CONFIRMATION MODAL / SCREEN */
             <div className="max-w-2xl mx-auto p-8 sm:p-12 rounded-3xl bg-white border border-slate-200 shadow-2xl text-center animate-in zoom-in-95 duration-300">

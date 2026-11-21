@@ -12,7 +12,7 @@ import AboutPage from './pages/AboutPage';
 export default function App() {
   return (
     <BrowserRouter>
-      <div className="flex flex-col min-h-screen text-slate-800 bg-slate-50 selection:bg-amber-400 selection:text-slate-950 font-sans">
+      <div className="flex flex-col min-h-screen text-slate-800 bg-slate-50 selection:bg-amber-400 selection:text-slate-950 font-sans pb-16 sm:pb-0">
         <ScrollToTop />
         
         {/* Sticky Header Navigation */}

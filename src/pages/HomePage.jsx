@@ -80,26 +80,26 @@ export default function HomePage() {
               </div>
 
               {/* Key Trust Signals */}
-              <div className="pt-6 border-t border-slate-800/80 grid grid-cols-3 gap-4 text-center lg:text-left">
-                <div>
-                  <div className="flex items-center justify-center lg:justify-start gap-1 text-amber-400">
+              <div className="pt-6 border-t border-slate-800/80 grid grid-cols-1 sm:grid-cols-3 gap-3 sm:gap-4 text-center sm:text-left">
+                <div className="p-3 sm:p-0 rounded-xl bg-white/5 sm:bg-transparent">
+                  <div className="flex items-center justify-center sm:justify-start gap-1 text-amber-400">
                     {[...Array(5)].map((_, i) => (
                       <Star key={i} className="w-4 h-4 fill-amber-400" />
                     ))}
                   </div>
-                  <p className="text-xs text-slate-300 font-bold mt-1">5.0 Star Rating</p>
+                  <p className="text-xs text-slate-200 font-bold mt-1">5.0 Star Rating</p>
                   <p className="text-[11px] text-slate-400">Fuquay-Varina Homeowners</p>
                 </div>
-                <div>
+                <div className="p-3 sm:p-0 rounded-xl bg-white/5 sm:bg-transparent">
                   <div className="text-lg font-black text-white">100%</div>
-                  <p className="text-xs text-slate-300 font-bold">Sherwin &amp; Ben Moore</p>
+                  <p className="text-xs text-slate-200 font-bold mt-0.5">Sherwin &amp; Ben Moore</p>
                   <p className="text-[11px] text-slate-400">Contractor Grade Specs</p>
                 </div>
-                <div>
-                  <div className="text-lg font-black text-emerald-400 flex items-center justify-center lg:justify-start gap-1">
+                <div className="p-3 sm:p-0 rounded-xl bg-white/5 sm:bg-transparent">
+                  <div className="text-lg font-black text-emerald-400 flex items-center justify-center sm:justify-start gap-1">
                     <ShieldCheck className="w-4 h-4" /> NC Licensed
                   </div>
-                  <p className="text-xs text-slate-300 font-bold">Fully Insured</p>
+                  <p className="text-xs text-slate-200 font-bold mt-0.5">Fully Insured</p>
                   <p className="text-[11px] text-slate-400">Liability &amp; Workers Comp</p>
                 </div>
               </div>

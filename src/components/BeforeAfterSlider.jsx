@@ -12,7 +12,25 @@ export default function BeforeAfterSlider({
 }) {
   const [sliderPosition, setSliderPosition] = useState(50);
   const [isDragging, setIsDragging] = useState(false);
+  const [containerWidth, setContainerWidth] = useState(0);
   const containerRef = useRef(null);
+
+  // Keep container width strictly aligned on load and resize
+  useEffect(() => {
+    const updateWidth = () => {
+      if (containerRef.current) {
+        setContainerWidth(containerRef.current.offsetWidth);
+      }
+    };
+    updateWidth();
+    // Run after layout paints as well
+    const timer = setTimeout(updateWidth, 100);
+    window.addEventListener('resize', updateWidth);
+    return () => {
+      clearTimeout(timer);
+      window.removeEventListener('resize', updateWidth);
+    };
+  }, []);
 
   const handleMove = useCallback((clientX) => {
     if (!containerRef.current) return;
@@ -29,7 +47,6 @@ export default function BeforeAfterSlider({
   }, [handleMove]);
 
   const handleMouseDown = () => setIsDragging(true);
-  const handleMouseUp = () => setIsDragging(false);
 
   useEffect(() => {
     const handleGlobalMouseUp = () => setIsDragging(false);
@@ -76,7 +93,7 @@ export default function BeforeAfterSlider({
         />
 
         {/* AFTER BADGE */}
-        <div className="absolute top-4 right-4 z-10 px-3 py-1 rounded-full bg-slate-900/85 backdrop-blur-md text-white text-xs font-bold tracking-wide border border-white/20 shadow-md">
+        <div className="absolute top-4 right-4 z-10 px-3 py-1 rounded-full bg-slate-950/85 backdrop-blur-md text-white text-xs font-bold tracking-wide border border-white/20 shadow-md">
           {afterLabel}
         </div>
 
@@ -89,10 +106,10 @@ export default function BeforeAfterSlider({
             src={beforeImage}
             alt={beforeLabel}
             className="absolute inset-y-0 left-0 h-full max-w-none object-cover"
-            style={{ width: containerRef.current ? `${containerRef.current.offsetWidth}px` : '100%' }}
+            style={{ width: containerWidth ? `${containerWidth}px` : '100%' }}
             loading="lazy"
           />
-          {/* Subtle dimming overlay for before image to emphasize the upgrade */}
+          {/* Subtle dimming overlay for before image */}
           <div className="absolute inset-0 bg-slate-950/20" />
         </div>
 
@@ -126,21 +143,21 @@ export default function BeforeAfterSlider({
         <button
           type="button"
           onClick={() => setSliderPosition(100)}
-          className="hover:text-blue-600 font-medium px-2 py-1 rounded hover:bg-slate-100 transition-colors"
+          className="hover:text-blue-600 font-medium px-2 py-1 rounded hover:bg-slate-100 transition-colors cursor-pointer"
         >
           View Full Before
         </button>
         <button
           type="button"
           onClick={() => setSliderPosition(50)}
-          className="text-blue-600 font-semibold px-2 py-1 rounded bg-blue-50 hover:bg-blue-100 transition-colors"
+          className="text-blue-600 font-semibold px-2 py-1 rounded bg-blue-50 hover:bg-blue-100 transition-colors cursor-pointer"
         >
           Reset to 50/50 Split
         </button>
         <button
           type="button"
           onClick={() => setSliderPosition(0)}
-          className="hover:text-blue-600 font-medium px-2 py-1 rounded hover:bg-slate-100 transition-colors"
+          className="hover:text-blue-600 font-medium px-2 py-1 rounded hover:bg-slate-100 transition-colors cursor-pointer"
         >
           View Full After
         </button>

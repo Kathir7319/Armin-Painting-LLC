@@ -6,12 +6,12 @@ export default function Logo({ variant = 'full', theme = 'dark', className = '' 
   const isLight = theme === 'light';
 
   return (
-    <Link to="/" className={`group inline-flex items-center gap-3 transition-transform hover:scale-[1.01] ${className}`}>
+    <Link to="/" className={`group inline-flex items-center gap-2.5 sm:gap-3 transition-transform hover:scale-[1.01] flex-shrink-0 ${className}`}>
       {/* Emblem Icon */}
       <div className="relative flex-shrink-0">
         <svg
           viewBox="0 0 64 64"
-          className="w-10 h-10 md:w-11 md:h-11 drop-shadow-md transition-transform group-hover:rotate-1"
+          className="w-9 h-9 sm:w-10 sm:h-10 md:w-11 md:h-11 drop-shadow-md transition-transform group-hover:rotate-1"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
         >
@@ -63,25 +63,25 @@ export default function Logo({ variant = 'full', theme = 'dark', className = '' 
 
       {/* Brand Text Lockup */}
       {variant !== 'icon-only' && (
-        <div className="flex flex-col">
-          <div className="flex items-baseline gap-1.5 leading-none">
+        <div className="flex flex-col justify-center">
+          <div className="flex items-center gap-1 sm:gap-1.5 leading-none">
             <span
-              className={`text-xl md:text-2xl font-black tracking-tight ${
+              className={`text-lg sm:text-xl md:text-2xl font-black tracking-tight ${
                 isLight ? 'text-white' : 'text-slate-900'
               }`}
             >
               ARMIN
             </span>
-            <span className="text-xl md:text-2xl font-extrabold tracking-tight text-blue-600">
+            <span className="text-lg sm:text-xl md:text-2xl font-extrabold tracking-tight text-blue-600">
               PAINTING
             </span>
-            <span className="text-xs font-bold tracking-widest text-amber-500 uppercase px-1 py-0.5 rounded bg-amber-500/10 border border-amber-500/20">
+            <span className="text-[9px] sm:text-xs font-bold tracking-widest text-amber-500 uppercase px-1 py-0.5 rounded bg-amber-500/10 border border-amber-500/20">
               LLC
             </span>
           </div>
           {variant === 'full' && (
             <span
-              className={`text-[9.5px] md:text-[10px] tracking-widest uppercase font-semibold mt-1 ${
+              className={`hidden sm:block text-[9px] md:text-[10px] tracking-widest uppercase font-semibold mt-0.5 ${
                 isLight ? 'text-slate-300' : 'text-slate-500'
               }`}
             >
