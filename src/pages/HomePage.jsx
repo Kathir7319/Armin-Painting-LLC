@@ -145,75 +145,81 @@ export default function HomePage() {
           </div>
 
           {/* 3 Core Value Props (From Document) */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-stretch">
             {/* 1. Versatile Solutions */}
-            <div className="p-8 rounded-3xl bg-slate-50 border border-slate-200/90 shadow-sm hover:shadow-xl hover:border-blue-300 transition-all group">
-              <div className="w-14 h-14 rounded-2xl bg-blue-600 text-white flex items-center justify-center mb-6 shadow-md shadow-blue-500/20 group-hover:scale-110 transition-transform">
-                <Layers className="w-7 h-7" />
+            <div className="p-8 rounded-3xl bg-slate-50 border border-slate-200/90 shadow-sm hover:shadow-xl hover:border-blue-300 transition-all group flex flex-col justify-between h-full">
+              <div>
+                <div className="w-14 h-14 rounded-2xl bg-blue-600 text-white flex items-center justify-center mb-6 shadow-md shadow-blue-500/20 group-hover:scale-110 transition-transform">
+                  <Layers className="w-7 h-7" />
+                </div>
+                <h3 className="text-xl font-black text-slate-900 mb-2">
+                  Versatile Solutions
+                </h3>
+                <p className="text-slate-600 text-sm leading-relaxed">
+                  Servicing residential and commercial properties with tailored coatings. From single drywall repairs to comprehensive exterior estates and retail spaces, our crew adapts to every architectural requirement.
+                </p>
               </div>
-              <h3 className="text-xl font-black text-slate-900 mb-2">
-                Versatile Solutions
-              </h3>
-              <p className="text-slate-600 text-sm leading-relaxed">
-                Servicing residential and commercial properties with tailored coatings. From single drywall repairs to comprehensive exterior estates and retail spaces, our crew adapts to every architectural requirement.
-              </p>
-              <ul className="mt-4 space-y-2 text-xs font-bold text-slate-700">
+              <ul className="mt-6 pt-4 border-t border-slate-200/60 space-y-2 text-xs font-bold text-slate-700">
                 <li className="flex items-center gap-2">
-                  <CheckCircle2 className="w-4 h-4 text-blue-600" /> Residential Single &amp; Multi-Room
+                  <CheckCircle2 className="w-4 h-4 text-blue-600 flex-shrink-0" /> Residential Single &amp; Multi-Room
                 </li>
                 <li className="flex items-center gap-2">
-                  <CheckCircle2 className="w-4 h-4 text-blue-600" /> Commercial Facilities &amp; Offices
+                  <CheckCircle2 className="w-4 h-4 text-blue-600 flex-shrink-0" /> Commercial Facilities &amp; Offices
                 </li>
                 <li className="flex items-center gap-2">
-                  <CheckCircle2 className="w-4 h-4 text-blue-600" /> Tailored Weather-Proof Systems
+                  <CheckCircle2 className="w-4 h-4 text-blue-600 flex-shrink-0" /> Tailored Weather-Proof Systems
                 </li>
               </ul>
             </div>
 
             {/* 2. Premium Paint Specs */}
-            <div className="p-8 rounded-3xl bg-slate-50 border border-slate-200/90 shadow-sm hover:shadow-xl hover:border-amber-300 transition-all group">
-              <div className="w-14 h-14 rounded-2xl bg-amber-500 text-slate-950 flex items-center justify-center mb-6 shadow-md shadow-amber-500/20 group-hover:scale-110 transition-transform">
-                <Palette className="w-7 h-7" />
+            <div className="p-8 rounded-3xl bg-slate-50 border border-slate-200/90 shadow-sm hover:shadow-xl hover:border-amber-300 transition-all group flex flex-col justify-between h-full">
+              <div>
+                <div className="w-14 h-14 rounded-2xl bg-amber-500 text-slate-950 flex items-center justify-center mb-6 shadow-md shadow-amber-500/20 group-hover:scale-110 transition-transform">
+                  <Palette className="w-7 h-7" />
+                </div>
+                <h3 className="text-xl font-black text-slate-900 mb-2">
+                  Premium Paint Specs
+                </h3>
+                <p className="text-slate-600 text-sm leading-relaxed">
+                  Formulated using premium Sherwin-Williams and Benjamin Moore products. We never dilute or downgrade materials, ensuring rich color depth, scrubbability, and multi-year durability.
+                </p>
               </div>
-              <h3 className="text-xl font-black text-slate-900 mb-2">
-                Premium Paint Specs
-              </h3>
-              <p className="text-slate-600 text-sm leading-relaxed">
-                Formulated using premium Sherwin-Williams and Benjamin Moore products. We never dilute or downgrade materials, ensuring rich color depth, scrubbability, and multi-year durability.
-              </p>
-              <ul className="mt-4 space-y-2 text-xs font-bold text-slate-700">
+              <ul className="mt-6 pt-4 border-t border-slate-200/60 space-y-2 text-xs font-bold text-slate-700">
                 <li className="flex items-center gap-2">
-                  <CheckCircle2 className="w-4 h-4 text-amber-500" /> Sherwin-Williams Emerald &amp; SuperPaint
+                  <CheckCircle2 className="w-4 h-4 text-amber-500 flex-shrink-0" /> Sherwin-Williams Emerald &amp; SuperPaint
                 </li>
                 <li className="flex items-center gap-2">
-                  <CheckCircle2 className="w-4 h-4 text-amber-500" /> Benjamin Moore Regal Select &amp; Aura
+                  <CheckCircle2 className="w-4 h-4 text-amber-500 flex-shrink-0" /> Benjamin Moore Regal Select &amp; Aura
                 </li>
                 <li className="flex items-center gap-2">
-                  <CheckCircle2 className="w-4 h-4 text-amber-500" /> Zero-VOC &amp; Ultra-Washable Finishes
+                  <CheckCircle2 className="w-4 h-4 text-amber-500 flex-shrink-0" /> Zero-VOC &amp; Ultra-Washable Finishes
                 </li>
               </ul>
             </div>
 
             {/* 3. Flawless Execution */}
-            <div className="p-8 rounded-3xl bg-slate-50 border border-slate-200/90 shadow-sm hover:shadow-xl hover:border-emerald-300 transition-all group">
-              <div className="w-14 h-14 rounded-2xl bg-emerald-600 text-white flex items-center justify-center mb-6 shadow-md shadow-emerald-500/20 group-hover:scale-110 transition-transform">
-                <ShieldCheck className="w-7 h-7" />
+            <div className="p-8 rounded-3xl bg-slate-50 border border-slate-200/90 shadow-sm hover:shadow-xl hover:border-emerald-300 transition-all group flex flex-col justify-between h-full">
+              <div>
+                <div className="w-14 h-14 rounded-2xl bg-emerald-600 text-white flex items-center justify-center mb-6 shadow-md shadow-emerald-500/20 group-hover:scale-110 transition-transform">
+                  <ShieldCheck className="w-7 h-7" />
+                </div>
+                <h3 className="text-xl font-black text-slate-900 mb-2">
+                  Flawless Execution
+                </h3>
+                <p className="text-slate-600 text-sm leading-relaxed">
+                  From absolute protection of your furniture to detailed post-job clean-up. We mask every baseboard, cover all flooring, patch drywall imperfections, and leave zero mess behind.
+                </p>
               </div>
-              <h3 className="text-xl font-black text-slate-900 mb-2">
-                Flawless Execution
-              </h3>
-              <p className="text-slate-600 text-sm leading-relaxed">
-                From absolute protection of your furniture to detailed post-job clean-up. We mask every baseboard, cover all flooring, patch drywall imperfections, and leave zero mess behind.
-              </p>
-              <ul className="mt-4 space-y-2 text-xs font-bold text-slate-700">
+              <ul className="mt-6 pt-4 border-t border-slate-200/60 space-y-2 text-xs font-bold text-slate-700">
                 <li className="flex items-center gap-2">
-                  <CheckCircle2 className="w-4 h-4 text-emerald-600" /> 100% Furniture &amp; Flooring Masking
+                  <CheckCircle2 className="w-4 h-4 text-emerald-600 flex-shrink-0" /> 100% Furniture &amp; Flooring Masking
                 </li>
                 <li className="flex items-center gap-2">
-                  <CheckCircle2 className="w-4 h-4 text-emerald-600" /> Straight Razor-Sharp Trim Lines
+                  <CheckCircle2 className="w-4 h-4 text-emerald-600 flex-shrink-0" /> Straight Razor-Sharp Trim Lines
                 </li>
                 <li className="flex items-center gap-2">
-                  <CheckCircle2 className="w-4 h-4 text-emerald-600" /> White-Glove Post-Job Clean-up
+                  <CheckCircle2 className="w-4 h-4 text-emerald-600 flex-shrink-0" /> White-Glove Post-Job Clean-up
                 </li>
               </ul>
             </div>
@@ -381,7 +387,7 @@ export default function HomePage() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
               {
                 step: '01',
@@ -406,7 +412,7 @@ export default function HomePage() {
             ].map((item, index) => (
               <div
                 key={item.step}
-                className="relative p-6 rounded-3xl bg-slate-50 border border-slate-200 flex flex-col justify-between"
+                className="relative p-6 sm:p-7 rounded-3xl bg-slate-50 border border-slate-200/90 flex flex-col justify-between shadow-xs hover:shadow-md transition-shadow"
               >
                 <div>
                   <span className="text-3xl font-black text-blue-600/30">

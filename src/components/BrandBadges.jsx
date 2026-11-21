@@ -16,9 +16,9 @@ export default function BrandBadges({ detailed = false }) {
         </p>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-stretch">
         {/* SHERWIN-WILLIAMS SPECIFICATION CARD */}
-        <div className="bg-gradient-to-br from-slate-900 via-blue-950 to-slate-900 text-white rounded-3xl p-6 md:p-8 shadow-xl border border-blue-900/50 relative overflow-hidden group">
+        <div className="bg-gradient-to-br from-slate-900 via-blue-950 to-slate-900 text-white rounded-3xl p-6 md:p-8 shadow-xl border border-blue-900/50 relative overflow-hidden group flex flex-col justify-between h-full">
           <div className="absolute top-0 right-0 -mr-10 -mt-10 w-44 h-44 bg-blue-500/10 rounded-full blur-2xl pointer-events-none group-hover:bg-blue-500/20 transition-colors" />
           
           <div className="flex items-center justify-between mb-4">
@@ -83,7 +83,7 @@ export default function BrandBadges({ detailed = false }) {
         </div>
 
         {/* BENJAMIN MOORE SPECIFICATION CARD */}
-        <div className="bg-gradient-to-br from-slate-900 via-stone-900 to-slate-900 text-white rounded-3xl p-6 md:p-8 shadow-xl border border-stone-800 relative overflow-hidden group">
+        <div className="bg-gradient-to-br from-slate-900 via-stone-900 to-slate-900 text-white rounded-3xl p-6 md:p-8 shadow-xl border border-stone-800 relative overflow-hidden group flex flex-col justify-between h-full">
           <div className="absolute top-0 right-0 -mr-10 -mt-10 w-44 h-44 bg-amber-500/10 rounded-full blur-2xl pointer-events-none group-hover:bg-amber-500/20 transition-colors" />
 
           <div className="flex items-center justify-between mb-4">

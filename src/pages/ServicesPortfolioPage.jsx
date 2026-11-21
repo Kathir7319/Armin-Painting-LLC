@@ -354,91 +354,95 @@ export default function ServicesPortfolioPage() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-stretch">
             {/* SHERWIN-WILLIAMS DETAILS */}
-            <div className="p-8 rounded-3xl bg-slate-800/90 border border-slate-700 shadow-xl">
-              <div className="flex items-center justify-between pb-4 border-b border-slate-700">
-                <h3 className="text-2xl font-black text-white">Sherwin-Williams Specs</h3>
-                <span className="text-xs bg-blue-600 text-white font-bold px-3 py-1 rounded-full">Contractor Tier</span>
+            <div className="p-8 rounded-3xl bg-slate-800/90 border border-slate-700 shadow-xl h-full flex flex-col justify-between">
+              <div>
+                <div className="flex items-center justify-between pb-4 border-b border-slate-700">
+                  <h3 className="text-2xl font-black text-white">Sherwin-Williams Specs</h3>
+                  <span className="text-xs bg-blue-600 text-white font-bold px-3 py-1 rounded-full">Contractor Tier</span>
+                </div>
+                <ul className="mt-6 space-y-4">
+                  <li className="flex items-start gap-3">
+                    <div className="w-6 h-6 rounded-full bg-blue-500/20 text-blue-400 flex items-center justify-center flex-shrink-0 mt-0.5">
+                      ✓
+                    </div>
+                    <div>
+                      <h4 className="font-bold text-white text-base">SuperPaint®</h4>
+                      <p className="text-xs text-slate-300 mt-0.5 leading-relaxed">
+                        Paint and primer in one with superb hide, smooth leveling, and fast recoat window.
+                      </p>
+                    </div>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <div className="w-6 h-6 rounded-full bg-blue-500/20 text-blue-400 flex items-center justify-center flex-shrink-0 mt-0.5">
+                      ✓
+                    </div>
+                    <div>
+                      <h4 className="font-bold text-white text-base">Emerald® Premium Interior Acrylic</h4>
+                      <p className="text-xs text-slate-300 mt-0.5 leading-relaxed">
+                        Best-in-class washability, zero-VOC formula, and self-leveling finish that resists water spotting.
+                      </p>
+                    </div>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <div className="w-6 h-6 rounded-full bg-blue-500/20 text-blue-400 flex items-center justify-center flex-shrink-0 mt-0.5">
+                      ✓
+                    </div>
+                    <div>
+                      <h4 className="font-bold text-white text-base">Duration® Exterior</h4>
+                      <p className="text-xs text-slate-300 mt-0.5 leading-relaxed">
+                        Advanced PermaLast® acrylic polymers formulate a thick, flexible membrane against cracking and peeling.
+                      </p>
+                    </div>
+                  </li>
+                </ul>
               </div>
-              <ul className="mt-6 space-y-4">
-                <li className="flex items-start gap-3">
-                  <div className="w-6 h-6 rounded-full bg-blue-500/20 text-blue-400 flex items-center justify-center flex-shrink-0 mt-0.5">
-                    ✓
-                  </div>
-                  <div>
-                    <h4 className="font-bold text-white text-base">SuperPaint®</h4>
-                    <p className="text-xs text-slate-300 mt-0.5 leading-relaxed">
-                      Paint and primer in one with superb hide, smooth leveling, and fast recoat window.
-                    </p>
-                  </div>
-                </li>
-                <li className="flex items-start gap-3">
-                  <div className="w-6 h-6 rounded-full bg-blue-500/20 text-blue-400 flex items-center justify-center flex-shrink-0 mt-0.5">
-                    ✓
-                  </div>
-                  <div>
-                    <h4 className="font-bold text-white text-base">Emerald® Premium Interior Acrylic</h4>
-                    <p className="text-xs text-slate-300 mt-0.5 leading-relaxed">
-                      Best-in-class washability, zero-VOC formula, and self-leveling finish that resists water spotting.
-                    </p>
-                  </div>
-                </li>
-                <li className="flex items-start gap-3">
-                  <div className="w-6 h-6 rounded-full bg-blue-500/20 text-blue-400 flex items-center justify-center flex-shrink-0 mt-0.5">
-                    ✓
-                  </div>
-                  <div>
-                    <h4 className="font-bold text-white text-base">Duration® Exterior</h4>
-                    <p className="text-xs text-slate-300 mt-0.5 leading-relaxed">
-                      Advanced PermaLast® acrylic polymers formulate a thick, flexible membrane against cracking and peeling.
-                    </p>
-                  </div>
-                </li>
-              </ul>
             </div>
 
             {/* BENJAMIN MOORE DETAILS */}
-            <div className="p-8 rounded-3xl bg-slate-800/90 border border-slate-700 shadow-xl">
-              <div className="flex items-center justify-between pb-4 border-b border-slate-700">
-                <h3 className="text-2xl font-black text-white">Benjamin Moore Specs</h3>
-                <span className="text-xs bg-amber-500 text-slate-950 font-black px-3 py-1 rounded-full">Artisan Tier</span>
+            <div className="p-8 rounded-3xl bg-slate-800/90 border border-slate-700 shadow-xl h-full flex flex-col justify-between">
+              <div>
+                <div className="flex items-center justify-between pb-4 border-b border-slate-700">
+                  <h3 className="text-2xl font-black text-white">Benjamin Moore Specs</h3>
+                  <span className="text-xs bg-amber-500 text-slate-950 font-black px-3 py-1 rounded-full">Artisan Tier</span>
+                </div>
+                <ul className="mt-6 space-y-4">
+                  <li className="flex items-start gap-3">
+                    <div className="w-6 h-6 rounded-full bg-amber-500/20 text-amber-400 flex items-center justify-center flex-shrink-0 mt-0.5">
+                      ✓
+                    </div>
+                    <div>
+                      <h4 className="font-bold text-white text-base">Regal® Select Interior</h4>
+                      <p className="text-xs text-slate-300 mt-0.5 leading-relaxed">
+                        Infused with proprietary Gennex® Color Technology for unrivaled durability and true color richness.
+                      </p>
+                    </div>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <div className="w-6 h-6 rounded-full bg-amber-500/20 text-amber-400 flex items-center justify-center flex-shrink-0 mt-0.5">
+                      ✓
+                    </div>
+                    <div>
+                      <h4 className="font-bold text-white text-base">Aura® Waterborne</h4>
+                      <p className="text-xs text-slate-300 mt-0.5 leading-relaxed">
+                        Color Lock® technology locks pigments into acrylic polymers for zero color rub-off, even in deep dark hues.
+                      </p>
+                    </div>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <div className="w-6 h-6 rounded-full bg-amber-500/20 text-amber-400 flex items-center justify-center flex-shrink-0 mt-0.5">
+                      ✓
+                    </div>
+                    <div>
+                      <h4 className="font-bold text-white text-base">Ben® Low-VOC Lines</h4>
+                      <p className="text-xs text-slate-300 mt-0.5 leading-relaxed">
+                        Eco-responsible, low-odor formula that allows for immediate room reoccupation with zero headache fumes.
+                      </p>
+                    </div>
+                  </li>
+                </ul>
               </div>
-              <ul className="mt-6 space-y-4">
-                <li className="flex items-start gap-3">
-                  <div className="w-6 h-6 rounded-full bg-amber-500/20 text-amber-400 flex items-center justify-center flex-shrink-0 mt-0.5">
-                    ✓
-                  </div>
-                  <div>
-                    <h4 className="font-bold text-white text-base">Regal® Select Interior</h4>
-                    <p className="text-xs text-slate-300 mt-0.5 leading-relaxed">
-                      Infused with proprietary Gennex® Color Technology for unrivaled durability and true color richness.
-                    </p>
-                  </div>
-                </li>
-                <li className="flex items-start gap-3">
-                  <div className="w-6 h-6 rounded-full bg-amber-500/20 text-amber-400 flex items-center justify-center flex-shrink-0 mt-0.5">
-                    ✓
-                  </div>
-                  <div>
-                    <h4 className="font-bold text-white text-base">Aura® Waterborne</h4>
-                    <p className="text-xs text-slate-300 mt-0.5 leading-relaxed">
-                      Color Lock® technology locks pigments into acrylic polymers for zero color rub-off, even in deep dark hues.
-                    </p>
-                  </div>
-                </li>
-                <li className="flex items-start gap-3">
-                  <div className="w-6 h-6 rounded-full bg-amber-500/20 text-amber-400 flex items-center justify-center flex-shrink-0 mt-0.5">
-                    ✓
-                  </div>
-                  <div>
-                    <h4 className="font-bold text-white text-base">Ben® Low-VOC Lines</h4>
-                    <p className="text-xs text-slate-300 mt-0.5 leading-relaxed">
-                      Eco-responsible, low-odor formula that allows for immediate room reoccupation with zero headache fumes.
-                    </p>
-                  </div>
-                </li>
-              </ul>
             </div>
           </div>
         </div>

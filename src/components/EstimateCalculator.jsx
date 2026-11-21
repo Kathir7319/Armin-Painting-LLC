@@ -134,7 +134,7 @@ export default function EstimateCalculator({ onPrefillForm = null }) {
           <label className="block text-xs font-bold text-slate-300 uppercase tracking-wider mb-2">
             2. Estimated Scope
           </label>
-          <div className="grid grid-cols-3 gap-2">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-2">
             {[
               { id: 'single', label: 'Single Area / Room', desc: '100-300 sq ft' },
               { id: 'medium', label: 'Multiple Rooms', desc: '400-1,200 sq ft' },
